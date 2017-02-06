@@ -3,6 +3,17 @@
 #include "Cat.h"
 using namespace std;
 
+
+int linearSearch(auto data, auto key)//prototype
+{
+	for (int i=0; i < data.size(); i++)
+	{
+		if (data[i]==key)
+		return i;
+	}//end for
+	return -1;
+}
+
 int main()
 {
 	Cat cats;
